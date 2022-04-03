@@ -29,7 +29,7 @@
 }
 
 textarea, #preview {
-  min-height: 400px;
+  min-height: 500px;
 }
 
 @keyframes App-logo-spin {

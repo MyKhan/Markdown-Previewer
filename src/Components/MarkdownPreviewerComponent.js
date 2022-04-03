@@ -1,13 +1,17 @@
 import { marked } from "marked";
 
+marked.setOptions({
+    breaks: true
+})
+
 const MarkdownPreviewer = (props) => {
     return (
-        <div>
-            <p
-                id="preview"
-            >
-                {marked.parse(props.input)}
-            </p>
+        <div 
+            id="preview" 
+            dangerouslySetInnerHTML={{
+                __html: marked (props.text)
+            }}
+        >
         </div>
     );
 }
