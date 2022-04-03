@@ -28,6 +28,10 @@
   color: #61dafb;
 }
 
+textarea, #preview {
+  min-height: 400px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
